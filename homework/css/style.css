@@ -1,0 +1,32 @@
+.header{
+    width: 1600px;
+    height: 80px;
+    background-color: #ECECEC;
+}
+
+.banner{
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+}
+
+}
+.our_job{
+    display: flex;
+
+}
+.job{
+    margin: 0 15px 0 15px;
+
+}
+
+
+.team{
+    display: flex;
+}
+.team_member{
+    width: 270px;
+    height: 368px;
+
+
+}
