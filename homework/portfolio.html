@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -13,17 +16,16 @@
 
     <header class="header">
     
-        <nav>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html"> <span style="color: #2196F3;">Web</span> <span
+                <li><a class="logo" href="index.html"> <span style="color: #2196F3;">Web</span> <span
                             style="color: #000000;">Studio</span> </a></li>
-                <li><a class="nav-link" href="">Студия</a></li>
+                <li><a class="nav-link" href="index.html">Студия</a></li>
                 <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                 <li><a class="nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
         <ul>
-            <li>
             <li><a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -37,71 +39,89 @@
         <section>
             <h2>Фильтры</h2>
             <ul>
-                <li><button type="button" >Все</button></li>
-                <li><button type="button" >Веб-сайты</button></li>
-                <li><button type="button" >Приложения</button></li>
-                <li><button type="button" >Дизайн</button></li>
-                <li><button type="button" >Маркетинг</button></li>
+                <li><button class="filter-button" type="button" >Все</button></li>
+                <li><button class="filter-button" type="button" >Веб-сайты</button></li>
+                <li><button class="filter-button" type="button" >Приложения</button></li>
+                <li><button class="filter-button" type="button" >Дизайн</button></li>
+                <li><button class="filter-button" type="button" >Маркетинг</button></li>
             </ul>
 
         </section>
 
-        <!-- Works -->
+        <!-- examples -->
         <section>
             <h2>Примеры работ</h2>
             <ul>
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work1.jpg" alt="" width="370">
-                    <h3>Технокряк</h3>
-                    <p>Веб-сайт</p>
+                    <h3 class="example-name">Технокряк</h3>
+                    <p class="example-dsc">Веб-сайт</p>
+                    </a>
                 </li>
                 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work2.jpg" alt="" width="370">
-                    <h3>Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
+                    <h3 class="example-name">Постер New Orlean vs Golden Star</h3>
+                    <p class="example-dsc">Дизайн</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work3.jpg" alt="" width="370">
-                    <h3>Ресторан Seafood</h3>
-                    <p>Приложение</p>
+                    <h3 class="example-name">Ресторан Seafood</h3>
+                    <p class="example-dsc">Приложение</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work4.jpg" alt="" width="370">
-                    <h3>Проект Prime</h3>
-                    <p>Маркетинг</p>
+                    <h3 class="example-name">Проект Prime</h3>
+                    <p class="example-dsc">Маркетинг</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work5.jpg" alt="" width="370">
-                    <h3>Проект Boxes</h3>
-                    <p>Приложение</p>
+                    <h3 class="example-name">Проект Boxes</h3>
+                    <p class="example-dsc">Приложение</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work6.jpg" alt="" width="370">
-                    <h3>Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+                    <h3 class="example-name">Inspiration has no Borders</h3>
+                    <p class="example-dsc">Веб-сайт</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work7.jpg" alt="" width="370">
-                    <h3>Издание Limited Edition</h3>
-                    <p>Дизайн</p>
+                    <h3 class="example-name">Издание Limited Edition</h3>
+                    <p class="example-dsc">Дизайн</p>
+                    </a>
                 </li>
 
                 <li>
+                    <a href="">
                     <img src="./img/portfolio/work8.jpg" alt="" width="370">
-                    <h3>Проект LAB</h3>
-                    <p>Маркетинг</p>
+                    <h3 class="example-name">Проект LAB</h3>
+                    <p class="example-dsc">Маркетинг</p>
+                    </a>
                 </li>
 
-                <li
-                ><img src="./img/portfolio/work9.jpg" alt="" width="370">
-                <h3>Growing Business</h3>
-                <p>Приложение</p>
+                <li>
+                    <a href="">
+                    <img src="./img/portfolio/work9.jpg" alt="" width="370">
+                    <h3 class="example-name">Growing Business</h3>
+                    <p class="example-dsc">Приложение</p>
+                    </a>
                 </li>
             </ul>
 
@@ -110,20 +130,20 @@
 
     <footer>
         <ul>
-            <li><a href="index.html"><span style="color: #2196F3;">Web</span> <span
+            <li><a class="logo" href="index.html"><span style="color: #2196F3;">Web</span> <span
                         style="color: #ffffff;">Studio</span></a> </li>
             <li><a class="footer-text" href="https://goo.gl/maps/AY2nJN2C6vvvXLP28">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a> </li>
         </ul>
-        <p class="footer-text">присоединяйтесь</p>
+        <p class="footer-text call">присоединяйтесь</p>
         <ul>
             <li><a href="">Instagramm</a></li>
             <li><a href="">Twitter</a></li>
             <li><a href="">Facebook</a></li>
             <li><a href="">LinkedIn</a></li>
         </ul>
-        <p class="footer-text">Подпишитесь на рассылку</p>
+        <p class="footer-text call">Подпишитесь на рассылку</p>
         <input type="text"> <button>Подписаться</button>
     </footer>
 

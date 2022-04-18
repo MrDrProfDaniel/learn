@@ -4,39 +4,261 @@
 #757575
 #FFFFFF
 rgba(255, 255, 255, 0.6);
+#F5F4FA
 
 */
-body{
-    color: #757575;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    list-style-type: none;
+:root{
+    --main-color: #757575;
+    --accent-color: #2196F3;
+    --title-text-color: #212121;
+    --head-contacts-color:#757575;
+    --footer-contacs-color: rgba(255, 255, 255, 0.6);
+    
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+
+ul, li{
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+}
+
 
 h2,h3{
-    color:#212121 ;
+    color: var(--title-text-color);
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.conteiner{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 
-.header-contact{
-    color: #757575;
+.header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
-.nav-link{
-    color: #212121;
+.logo {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 86px;
 }
+.main-nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--title-text-color);
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.flex{
+    display: flex;
+}
+.contact-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+}
+
+/* .contact-list .item + .item{
+    margin-left: 30px;
+} */
+
+.item{
+    color:var(--head-contacts-color) ;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+/* .contact-list .item + .item{
+    margin-left: 30px;
+} */
+
+
 .header-contact:hover,
 .header-contact:focus,
 .nav-link:hover,
 .nav-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-footer{
+.hero-section{
+    color: #ffffff;
+    margin-bottom: 94px;
+    background-color: red;
+
+}
+.hero-heading{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-button{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    cursor: pointer;
+}
+/* Особенности */
+.features{
+    margin-bottom: 94px;
+}
+.features-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-list .item{
+width: 270px;
+}
+
+.features-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.features-text{
+    font-size: 14px;
+    line-height: 1.71;
+}
+/* чем мы занимаемся */
+.works{
+    padding-bottom: 188px;
+}
+.works-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Наша команда */
+.conteiner.team{
+    padding-bottom: 188px;
+}
+.team-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.team-member{
+    width: 270px;
+    text-align: center;
+}
+.social-list{
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+}
+
+.team-tittle,
+.team-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19; 
+    text-align: center;
+}
+
+/* Clients section */
+.conteiner.clients{
+    padding-bottom: 94px;
+}
+
+.clients-list{
+        list-style-type: none;
+        display: flex;
+        justify-content:space-between;
+        margin-top: 50px;
+}
+
+/* Footer */
+
+
+.conteiner.footer{
     background-color: #2F303A;
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 215px;
+}
+
+.footer-contact,
+.footer-text{
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .footer-contact{
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--footer-contacs-color) ;
 }
 
 .footer-text{
     color: #ffffff;
+}
+.call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+
+/* стили для Портфолио */
+
+.filter-button{
+    color: #212121;
+    background-color: #F5F4FA;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus{
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+
+.example-name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.example-dsc{
+    color: var(--main-color);
+    font-size: 16px;
+    line-height: 1.9;
 }
