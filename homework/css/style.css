@@ -43,6 +43,7 @@ h2{
     text-align: center;
     padding: 0;
     margin: 0;
+    margin-bottom: 50px;
 }
 .conteiner{
     width: 1200px;
@@ -55,12 +56,14 @@ h2{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    border-bottom: 1px solid black;
+    display: flex;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.19;
     margin-right: 86px;
 }
@@ -68,6 +71,8 @@ h2{
     display: flex;
     align-items: center;
     list-style: none;
+    padding-top: 24px;
+    padding-bottom: 26px;
 }
 
 .nav-link {
@@ -76,9 +81,7 @@ h2{
     margin-right: 50px;
 }
 
-.flex{
-    display: flex;
-}
+
 .contact-list{
     display: flex;
     align-items: center;
@@ -86,32 +89,29 @@ h2{
     
 }
 
-/* .contact-list .item + .item{
-    margin-left: 30px;
-} */
-
-.item{
-    color:var(--head-contacts-color) ;
-    text-decoration: none;
+.contact-list .item + .item{
     margin-left: 30px;
 }
 
-/* .contact-list .item + .item{
-    margin-left: 30px;
-} */
+.contact-item{
+    color:var(--head-contacts-color) ;
+    text-decoration: none;
+}
 
 
-.header-contact:hover,
-.header-contact:focus,
+
+
+.contact-item:hover,
+.contact-item:focus,
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
 }
 
 .hero-section{
+    text-align: center;
     color: #ffffff;
-    margin-bottom: 94px;
-    background-color: red;
+    background-color: rgb(0, 204, 255);
 
 }
 .hero-heading{
@@ -123,17 +123,23 @@ h2{
 }
 
 .hero-button{
+    display: inline-block;
     color: #ffffff;
+    background-color: var(--accent-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
     cursor: pointer;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
 }
 /* Особенности */
 .features{
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .features-list{
     display: flex;
@@ -156,7 +162,8 @@ width: 270px;
 }
 /* чем мы занимаемся */
 .works{
-    padding-bottom: 188px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .works-list{
     display: flex;
@@ -165,7 +172,8 @@ width: 270px;
 
 /* Наша команда */
 .conteiner.team{
-    padding-bottom: 188px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-list{
     list-style-type: none;
@@ -192,6 +200,7 @@ width: 270px;
 
 /* Clients section */
 .conteiner.clients{
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -235,20 +244,42 @@ width: 270px;
 
 /* стили для Портфолио */
 
+.filters-list{
+    display: flex;
+    justify-content:center;
+}
+
+.filters-list .item + .item{
+    margin-left: 8px;
+}
+
 .filter-button{
     color: #212121;
     background-color: #F5F4FA;
+    border: #F5F4FA;
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus{
     color: #ffffff;
     background-color: var(--accent-color);
+    border: var(--accent-color);
+}
+
+.examples{
+    padding-bottom: 94px;
+}
+.examples-list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .example-name{
