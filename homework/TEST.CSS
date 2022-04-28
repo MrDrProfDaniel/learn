@@ -1,15 +1,33 @@
 .flex{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
-.test{
-    color: red;
-    background-color: aqua;
+div{
+    height: 600px;
+    width: 600px;
 }
-.test-list{
+li{
+    padding: 20px 20px;
+}
+.link{
     display: flex;
-    list-style: none;
-    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
-.test-list .item + .item{
-    margin-left: 30px;
+.svg{
+height: 20px;
+width: 20px;
+fill:#AFB1B8;
+}
+.link:hover {
+    background-color: #2196F3;
+}
+.link:hover .svg{
+    fill: white;
 }
