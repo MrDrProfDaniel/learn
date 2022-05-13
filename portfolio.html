@@ -184,14 +184,16 @@
 
         <footer>
             <div class="conteiner footer">
-                <ul>
-                    <li><a class="logo" href="index.html"><span style="color: #2196F3;">Web</span> <span
-                                style="color: #ffffff;">Studio</span></a> </li>
-                    <li><a class="footer-text" href="https://goo.gl/maps/AY2nJN2C6vvvXLP28">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a> </li>
-                </ul>
+                <div class="footer-group">
+                    <a class="logo" href="index.html"><span style="color: #2196F3;">Web</span> <span
+                            style="color: #ffffff;">Studio</span></a>
+                    <ul>
+                        <li><a class="footer-text" href="https://goo.gl/maps/AY2nJN2C6vvvXLP28">г. Киев, пр-т Леси Украинки,
+                                26</a></li>
+                        <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                    </ul>
+                </div>
                 <div class="footercall">
                     <p class="footer-text call">ПРИСОЕДИНЯЙТЕСЬ</p>
                     <ul class="social-list">
@@ -224,10 +226,15 @@
                             </a>
                         </li>
                     </ul>
-                    </ul>
                 </div>
-                <p class="footer-text call">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                <input type="text"> <button class="sub-button">Подписаться</button>
+                <div class="footer-form">
+                    <form name="Subscribe" autocomplete="on">
+        
+                        <input class="input-footer" type="email" placeholder="E-mail" id="subcribe">
+                        <label class="footer-label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                        <button class="sub-button" type="submit">Подписаться</button>
+                    </form>
+                </div>
             </div>
         </footer>
 
