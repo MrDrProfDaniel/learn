@@ -193,6 +193,7 @@ h2{
     height: 100%;
     background-color: rgba(0,0,0,0.2);
     transition: opacity 250ms var(--main-cubic);
+    z-index: 100;
 }
 
 .modal{
@@ -209,7 +210,7 @@ h2{
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    z-index: +100;
+    z-index: 100;
 }
 .modal-heading{
     font-weight: 700;
@@ -617,7 +618,6 @@ fill: #AFB1B8;
 
 /* Footer */
 
-
 .conteiner.footer{
     background-color: #2F303A;
     width: 1600px;
@@ -672,6 +672,7 @@ fill: #AFB1B8;
 
 .footer-form{
     position: relative;
+    z-index: 0;
 }
 
 
@@ -686,6 +687,7 @@ fill: #AFB1B8;
     padding-left: 16px;
     margin-top: 36px;
     color: #fff;
+    z-index: 0;
 }
 .input-footer:focus{
     outline: 1px solid rgba(255, 255, 255, 0.3);
