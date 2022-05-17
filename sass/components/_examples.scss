@@ -1,0 +1,61 @@
+.examples {
+    @extend %container;
+    padding-bottom: 94px;
+}
+.examples-list {
+    @include flex(center, space-between);
+    flex-wrap: wrap;
+}
+.example-item {
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    @include transition(box-shadow);
+
+    &:hover {
+        box-shadow: $form-shadow;
+    }
+
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+    }
+}
+.example-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.example-hover-dsc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include flex;
+    padding: 63px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #fff;
+    transform: translateY(+101%);
+    @include transition(transform);
+    .example-item:hover & {
+        transform: translateY(0%);
+    }
+}
+.example-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.example-dsc {
+    color: $main-color;
+    font-size: 16px;
+    line-height: 1.9;
+    padding-left: 24px;
+}

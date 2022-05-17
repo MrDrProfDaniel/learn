@@ -1,0 +1,32 @@
+.clients {
+    @extend %container;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    @include flex(center,space-between);
+    margin-top: 50px;
+}
+
+.clients-link {
+    @include flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @include transition(border);
+        &:hover,
+        &:focus {
+            border: 1px solid $accent-color;
+        }
+}
+
+.client-svg {
+    fill: #afb1b8;
+    @include transition(fill);
+        .clients-link:hover &,
+        .clients-link:focus & {
+            fill: $accent-color;
+            }
+}

@@ -1,0 +1,56 @@
+.team {
+    @extend %container;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+}
+
+.team-list {
+    @include flex(center, space-between);
+}
+
+.team-member {
+    width: 270px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: $form-shadow;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.social-list {
+    @extend %social-list;
+}
+
+.social-link {
+    @include flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    @include transition(background-color);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.team-social-svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    @include transition(fill);
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: #ffffff;
+    }
+}
+
+.team-tittle {
+    @extend %team-text;
+    margin-top: 30px;
+}
+
+.team-text {
+    @extend %team-text;
+    margin-top: 10px;
+}

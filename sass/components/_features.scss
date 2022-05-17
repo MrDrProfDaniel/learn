@@ -1,0 +1,38 @@
+.features {
+    @extend %container;
+    padding-top: 94px;
+}
+
+.features-list {
+ @include flex(center, space-between);
+
+    & > .item:nth-child(1)::before {
+        @extend %feature-icon;}
+
+        &>.item:nth-child(2)::before {
+        @extend %feature-icon;
+        background-image: url(/img/Feature2.svg);
+        }
+
+    & > .item:nth-child(3)::before {
+        @extend %feature-icon;
+        background-image:url(/img/Feature3.svg); }
+
+    & > .item:nth-child(4)::before {
+        @extend %feature-icon;
+        background-image:url(/img/Feature4.svg); }
+
+    &  .item {
+    width: 270px;}
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
