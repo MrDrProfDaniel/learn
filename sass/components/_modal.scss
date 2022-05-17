@@ -65,7 +65,7 @@
 .input-item {
     position: relative;
 
-    &+& {
+    & + & {
         margin-top: 28px;
     }
 }
@@ -96,8 +96,8 @@
     transform: translate(42px, -50%);
     @include transition(transform);
 
-    .input-form:focus+&,
-    .input-form:not(:placeholder-shown)+& {
+    .input-form:focus + &,
+    .input-form:not(:placeholder-shown) + & {
         color: $accent-color;
         transform: translate(16px, -38px);
     }
@@ -113,8 +113,8 @@
     transform: translate(16px, -50%);
     @include transition(fill);
 
-    .input-form:focus~&,
-    .input-form:not(:placeholder-shown)~& {
+    .input-form:focus ~ &,
+    .input-form:not(:placeholder-shown) ~ & {
         fill: $accent-color;
     }
 }
@@ -130,8 +130,8 @@
     transform: translate(16px, 12px);
     @include transition(transform);
 
-    .feedback-form:focus+&,
-    .feedback-form:not(:placeholder-shown)+& {
+    .feedback-form:focus + &,
+    .feedback-form:not(:placeholder-shown) + & {
         color: $accent-color;
         transform: translate(16px, -22px);
     }
@@ -153,7 +153,6 @@
         outline-color: $accent-color;
     }
 }
-
 
 .checkbox-item {
     position: relative;
@@ -196,8 +195,8 @@
     cursor: pointer;
     transform: translate(-15px, -50%);
 
-    .checkbox:checked+& {
-        background-image: url(/img/check-icon.svg);
+    .checkbox:checked + & {
+        background-image: url(./img/check-icon.svg);
         background-size: contain;
         background-origin: border-box;
         border: none;
