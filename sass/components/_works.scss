@@ -1,5 +1,10 @@
-.works {
+.works{
     @extend %container;
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+.works {
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -29,4 +34,5 @@
     text-transform: uppercase;
     color: #fff;
     background-color: rgba(47, 48, 58, 0.8);
+}
 }

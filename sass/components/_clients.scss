@@ -1,17 +1,12 @@
 .clients {
     @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.clients-list {
-    @include flex(center,space-between);
-    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients-link {
     @include flex;
-    width: 170px;
+    width: 210px;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -29,4 +24,49 @@
         .clients-link:focus & {
             fill: $accent-color;
             }
+}
+@media screen and (max-width: 479px){
+    .clients-list{
+        @include flex;
+        flex-direction: column
+}   
+    .clients-link {
+        margin-bottom: 30px;}
+}
+@media screen and (min-width: 480px){
+    .clients-link {
+        
+        margin-bottom: 30px;
+        &:nth-child(2n){
+            margin-right: 30px;
+        }
+    }
+    .clients-list {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 768px){
+    .clients-link {
+        width: 226px;
+        margin-bottom: 30px;
+    }
+    .clients-list {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .clients-link {
+        width: 170px;
+    }
+    .clients-list {
+        margin-top: 50px;
+    }
 }

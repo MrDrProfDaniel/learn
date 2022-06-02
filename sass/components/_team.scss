@@ -1,16 +1,12 @@
 .team {
     @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #f5f4fa;
 }
 
-.team-list {
-    @include flex(center, space-between);
-}
 
 .team-member {
-    width: 270px;
     text-align: center;
     background-color: #fff;
     box-shadow: $form-shadow;
@@ -53,4 +49,45 @@
 .team-text {
     @extend %team-text;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 767px){
+    .team-member {
+        max-width: 450px;
+        margin-bottom: 30px;
+}
+    .team-heading{
+    font-size: 28px;
+    line-height: 1.18;
+}
+
+
+}
+@media screen and (min-width: 768px){
+    .team-member{
+        max-width: 354px;
+        &:nth-child(n+3){
+            margin-top: 20px;
+        }
+    }
+    .team-heading{
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    .team-list {
+    @include flex(center, space-between);
+    flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px){
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .team-member{
+        max-width: 270px;
+        &:nth-child(n+3){
+            margin-top: 0px;
+        }
+    }
 }

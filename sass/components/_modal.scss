@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
     @include flex;
     flex-direction: column;
-    width: 528px;
+    width: 450px;
     padding: 40px;
     background-color: #ffffff;
     box-shadow: $form-shadow;
@@ -72,7 +72,7 @@
 
 .input-form {
     display: inline-block;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border-color: rgba(33, 33, 33, 0.2);
     outline-color: rgba(33, 33, 33, 0.2);
@@ -139,7 +139,7 @@
 
 .feedback-form {
     display: inline-block;
-    width: 448px;
+    width: 370px;
     height: 120px;
     resize: none;
     border-color: rgba(33, 33, 33, 0.2);
@@ -172,8 +172,8 @@
 
 .checkbox-label {
     position: relative;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     color: $main-color;
     padding-left: 7px;
 
@@ -214,5 +214,38 @@
         background-color: #188ce8;
         border: #188ce8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media screen and (min-width:1200px){
+    .modal {
+        width: 528px;
+    }
+    .input-form {
+        width: 448px;
+    }
+    .input-label{
+        transform: translate(42px, -50%);
+        .input-form:focus + &,
+        .input-form:not(:placeholder-shown) + & {
+            transform: translate(16px, -38px);
+        }
+    }
+    .modal-svg{
+        transform: translate(16px, -50%);
+    }
+    .comment-label{
+        transform: translate(16px, 12px);
+    .input-form:focus + &,
+    .input-form:not(:placeholder-shown) + & {
+        transform: translate(16px, -38px);
+    }
+    }
+    .feedback-form {
+        width: 448px;
+    }
+    .checkbox-label{
+        font-size: 14px;
+        line-height: 1.7;
     }
 }

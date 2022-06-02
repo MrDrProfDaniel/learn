@@ -1,10 +1,21 @@
 .features {
     @extend %container;
-    padding-top: 94px;
+    padding-top: 60px;
 }
 
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+  
 .features-list {
-    @include flex(center, space-between);
 
     & > .item:nth-child(1)::before {
         @extend %feature-icon;
@@ -25,18 +36,29 @@
         background-image: url(../img/Feature4.svg);
     }
 
-    & .item {
+    // & .item {
+    //     width: 450px;
+        
+    // }
+}
+@media screen and (min-width: 768px) {
+    .features-list {
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+        & .item {
+        width: 354px;
+    }
+}
+}
+@media screen and (min-width: 1200px) {
+    .features {
+        padding-top: 94px;
+    }
+    .features-list {
+        & .item {
         width: 270px;
+        }
     }
 }
 
-.features-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-}
 
-.features-text {
-    font-size: 14px;
-    line-height: 1.71;
-}

@@ -12,44 +12,48 @@
         <link rel="stylesheet" href="css/main.min.css" />
     </head>
     <body>
-        <header>
-            <div class="header">
-                <nav>
+        <header class="header ">
+                    <div class="mobile-header">
+                    <a class="logo" href="index.html">
+                        <span style="color: #2196f3">Web</span>
+                        <span style="color: #000000">Studio</span>
+                    </a>
+                    <button class="menu-btn" data-menu-button>
+                    <svg class="menu-svg" width="40px" height="40px">
+                        <use class="icon-burger" href="./img/sprite.svg#menu-icon"></use>
+                        <use class="icon-close" href="./img/sprite.svg#close-icon"></use>
+                    </svg>
+                    </button>
+                    </div>
+                <div class="burger-menu" data-menu>
+                    <nav>   
                     <ul class="main-nav-list">
-                        <li>
-                            <a class="logo" href="index.html">
-                                <span style="color: #2196f3">Web</span>
-                                <span style="color: #000000">Studio</span>
-                            </a>
-                        </li>
                         <li><a class="nav-link current-page" href="index.html">Студия</a></li>
                         <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                         <li><a class="nav-link" href="">Контакты</a></li>
                     </ul>
-                </nav>
-                <ul class="contact-list">
+                    </nav>
+                    <ul class="contact-list">
                     <li class="item">
                         <a class="contact-item" href="mailto:info@devstudio.com">
-                            <svg class="contact-svg">
+                            <svg class="contact-svg" width="16px" height="11px">
                                 <use href="./img/sprite.svg#icon-mail"></use>
                             </svg>
-                            info@devstudio.com</a
-                        >
+                            info@devstudio.com</a>
                     </li>
                     <li class="item">
                         <a class="contact-item" href="tel:+380961111111">
-                            <svg class="contact-svg">
-                                <use href="./img/sprite.svg#icon-phone"></use></svg
-                            >+38 096 111 11 11</a
-                        >
+                            <svg class="contact-svg" width="10px" height="15px">
+                                <use href="./img/sprite.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
+                </div>
         </header>
 
         <main>
             <!--герой-->
-            <section class="hero-section">
+
+             <section class="hero-section"> 
                 <h1 class="hero-heading">
                     Эффективные решения <br />
                     для вашего бизнеса
@@ -126,7 +130,8 @@
                         </form>
                     </div>
                 </div>
-            </section>
+            </section> 
+
             <!--Особенности-->
 
             <section>
@@ -190,10 +195,10 @@
 
             <section>
                 <div class="team">
-                    <h2>Наша команда</h2>
+                    <h2 class="team-heading">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-member">
-                            <img src="img/team.jpg" alt="Игорь Демьяненко" width="270" />
+                            <img src="img/team.jpg" alt="Игорь Демьяненко" max-width="100%" />
                             <h3 class="team-tittle">Игорь Демьяненко</h3>
                             <p class="team-text">Product Designer</p>
                             <ul class="social-list">
@@ -229,7 +234,7 @@
                         </li>
 
                         <li class="team-member">
-                            <img src="img/team2.jpg" alt="Ольга Репина" width="270" />
+                            <img src="img/team2.jpg" alt="Ольга Репина" max-width="100%" />
                             <h3 class="team-tittle">Ольга Репина</h3>
                             <p class="team-text">Frontend Developer</p>
                             <ul class="social-list">
@@ -265,7 +270,7 @@
                         </li>
 
                         <li class="team-member">
-                            <img src="img/team3.jpg" alt="Николай Тарасов" width="270" />
+                            <img src="img/team3.jpg" alt="Николай Тарасов" max-width="100%" />
                             <h3 class="team-tittle">Николай Тарасов</h3>
                             <p class="team-text">Marketing</p>
                             <ul class="social-list">
@@ -301,7 +306,7 @@
                         </li>
 
                         <li class="team-member">
-                            <img src="img/team4.jpg" alt="Михаил Ермаков" width="270" />
+                            <img src="img/team4.jpg" alt="Михаил Ермаков" max-width="100%" />
                             <h3 class="team-tittle">Михаил Ермаков</h3>
                             <p class="team-text">UI Designer</p>
                             <ul class="social-list">
@@ -360,40 +365,36 @@
                         <li class="clients-item">
                             <a class="clients-link" href="">
                                 <svg width="41px" height="43px" class="client-svg">
-                                    <use href="./img/sprite.svg#icon-client3"></use></svg
-                            ></a>
+                                    <use href="./img/sprite.svg#icon-client3"></use></svg></a>
                         </li>
                         <li class="clients-item">
                             <a class="clients-link" href="">
                                 <svg width="80px" height="42px" class="client-svg">
-                                    <use href="./img/sprite.svg#icon-client4"></use></svg
-                            ></a>
+                                    <use href="./img/sprite.svg#icon-client4"></use></svg></a>
                         </li>
                         <li class="clients-item">
                             <a class="clients-link" href="">
                                 <svg width="59px" height="47px" class="client-svg">
-                                    <use href="./img/sprite.svg#icon-client5"></use></svg
-                            ></a>
+                                    <use href="./img/sprite.svg#icon-client5"></use></svg></a>
                         </li>
                         <li class="clients-item">
                             <a class="clients-link" href="">
                                 <svg width="89px" height="46px" class="client-svg">
-                                    <use href="./img/sprite.svg#icon-client6"></use></svg
-                            ></a>
+                                    <use href="./img/sprite.svg#icon-client6"></use></svg></a>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
 
-        <footer>
-            <div class="footer">
+        <footer class="footer-bg">
+            <div class="footer pc">
                 <div class="footer-group">
                     <a class="logo" href="index.html"
                         ><span style="color: #2196f3">Web</span>
                         <span style="color: #ffffff">Studio</span></a
                     >
-                    <ul>
+                    <ul class="footer-contact-list">
                         <li>
                             <a class="footer-text" href="https://goo.gl/maps/AY2nJN2C6vvvXLP28"
                                 >г. Киев, пр-т Леси Украинки, 26</a
@@ -443,7 +444,7 @@
                     </ul>
                 </div>
                 <div class="footer-form">
-                    <form name="Subscribe" autocomplete="on">
+                    <form class="footer-input-form" name="Subscribe" autocomplete="on">
                         <input
                             class="input-footer"
                             type="email"
@@ -456,7 +457,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="js/menu.js"></script>
         <script src="js/modal.js"></script>
     </body>
 </html>
