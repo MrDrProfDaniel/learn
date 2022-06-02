@@ -544,8 +544,8 @@ img {
     margin-top: 0;
   }
   .current-page::after {
-    -webkit-transform: translatey(30px);
-            transform: translatey(30px);
+    -webkit-transform: translatey(27px);
+            transform: translatey(27px);
   }
 }
 

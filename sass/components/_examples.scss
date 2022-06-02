@@ -1,25 +1,19 @@
 .examples {
     @extend %container;
-    padding-bottom: 94px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.examples-list {
-    @include flex(center, space-between);
-    flex-wrap: wrap;
-}
+
 .example-item {
     position: relative;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
     @include transition(box-shadow);
-
-    &:hover {
-        box-shadow: $form-shadow;
-    }
-
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0px;
-    }
+        &:hover {
+            box-shadow: $form-shadow;
+        }
 }
+
 .example-img {
     position: relative;
     overflow: hidden;
@@ -58,4 +52,31 @@
     font-size: 16px;
     line-height: 1.9;
     padding-left: 24px;
+}
+
+@media screen and (max-width: 767px){
+    .example-item{
+        max-width: 450px;
+    }
+}
+@media screen and (min-width: 768px){
+    .examples-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .example-item{
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .examples{
+        padding-bottom: 94px;
+    }
+    .example-item {
+        &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+        }
+    }
 }
